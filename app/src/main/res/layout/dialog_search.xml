@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <EditText
+        android:id="@+id/dialog_et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/dialog_rb_lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="丢失列表"/>
+        <RadioButton
+            android:id="@+id/dialog_rb_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拾获列表"/>
+    </RadioGroup>
+</LinearLayout>

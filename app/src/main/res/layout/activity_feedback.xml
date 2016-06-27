@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/feedback_et"
+        android:gravity="top|left"
+        android:maxLines="5"/>
+
+    <EditText
+        android:id="@+id/feedback_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:hint="请输入您的联系QQ号"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback_bt"
+        android:text="提交意见或反馈"/>
+
+</LinearLayout>

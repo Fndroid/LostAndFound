@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        key {
+            keyAlias 'lostandfound'
+            keyPassword 'flxforever'
+            storeFile file('H:/workspace/Android项目/key.jks')
+            storePassword '25574470'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "lostandfound.fndroid.com.lostandfound"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
+        debug {
+            signingConfig signingConfigs.key
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar', '*.so'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:24.0.0-alpha1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'me.dm7.barcodescanner:zxing:1.8.4'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+    compile 'me.dm7.barcodescanner:zxing:1.8.4'
+    compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
+    compile files('libs/BmobPay_v3.0.2_160531.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/libammsdk.jar')
+}

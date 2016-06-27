@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/home_navigationView_lostGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/home_navigationView_lost"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="失物列表"/>
+        <item
+            android:id="@+id/home_navigationView_addLost"
+            android:icon="@drawable/ic_note_add_black_24dp"
+            android:title="失物登记"/>
+
+    </group>
+
+    <group
+        android:id="@+id/home_navigationView_foundGroup"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/home_navigationView_found"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="拾获列表"/>
+        <item
+            android:id="@+id/home_navigationView_addFound"
+            android:icon="@drawable/ic_note_add_black_24dp"
+            android:title="拾获登记"/>
+
+    </group>
+    <group
+        android:id="@+id/home_navigationView_secondGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/home_navigationView_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="搜索"/>
+
+        <item
+            android:id="@+id/home_navigationView_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="设置"/>
+
+        <item
+            android:id="@+id/home_navigationView_support"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="支持作者"/>
+        <item
+            android:id="@+id/home_navigationView_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="意见反馈"/>
+
+        <item
+            android:id="@+id/home_navigationView_exit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="退出"/>
+
+    </group>
+
+</menu>

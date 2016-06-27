@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_browser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/browser_webView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:text="后退"
+            android:background="#fff"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="forward"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="前进"
+            android:layout_height="wrap_content"/>
+
+
+        <SeekBar
+            android:background="#fff"
+            android:progress="50"
+            android:id="@+id/browser_seekBar"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_weight="2"/>
+
+        <Button
+            android:onClick="exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:drawableTop="@drawable/ic_highlight_off_black_24dp"
+            android:text="退出"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
